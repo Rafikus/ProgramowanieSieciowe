@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Zadanie3
+namespace Zadanie4
 {
     class Program
     {
-        protected static char[] Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+        protected static char[] _alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+        private static Semaphore semaphore;
         static void Main(string[] args)
         {
+            semaphore = new Semaphore(3, 3);
             List<Thread> threads = new List<Thread>(10);
             for (int i = 0; i < 10; i++)
             {
@@ -28,21 +30,19 @@ namespace Zadanie3
 
         static void PrintSomething(object num)
         {
-            int lenght;
-            lock (Alpha)
+            semaphore.WaitOne();
+            for (int i = 0; i < _alpha.Length; i++)
             {
-                lenght = Alpha.Length;
-            }
-
-            for (int i = 0; i < lenght; i++)
-            {
-                lock (Alpha)
+                lock (_alpha)
                 {
-                    Console.WriteLine($"{Alpha[i]}{(int)num}");
+                    Console.WriteLine($"{_alpha[i]}{(int)num}");
                     Thread.Sleep(10);
                 }
             }
+
+            semaphore.Release(1);
         }
 
     }
 }
+

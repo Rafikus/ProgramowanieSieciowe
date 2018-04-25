@@ -57,7 +57,7 @@ namespace Zadanie2
                     {
                         for (int i = Int32.Parse(options[1].ToCharArray()[0].ToString()); i <= Int32.Parse(options[1].ToCharArray()[2].ToString()); i++)
                         {
-                            if (threads[Int32.Parse(options[1])].IsAlive) threads[i].Suspend();
+                            if (threads[i].IsAlive) threads[i].Suspend();
                         }
                     }
                 }
