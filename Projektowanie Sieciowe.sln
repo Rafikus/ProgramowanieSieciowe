@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie4", "Zadanie4\Zadani
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie5", "Zadanie5\Zadanie5.csproj", "{AF496B70-55F5-4E2F-A402-000812DBEE18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicastUDPServer", "UnicastUDPServer\UnicastUDPServer.csproj", "{2ED09B83-D02E-48DC-A71F-16F47593C6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicastUDPClient", "UnicastUDPClient\UnicastUDPClient.csproj", "{15B6AD56-314D-4B4A-90F3-4F1841153676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{AF496B70-55F5-4E2F-A402-000812DBEE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF496B70-55F5-4E2F-A402-000812DBEE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF496B70-55F5-4E2F-A402-000812DBEE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED09B83-D02E-48DC-A71F-16F47593C6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED09B83-D02E-48DC-A71F-16F47593C6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED09B83-D02E-48DC-A71F-16F47593C6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED09B83-D02E-48DC-A71F-16F47593C6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B6AD56-314D-4B4A-90F3-4F1841153676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B6AD56-314D-4B4A-90F3-4F1841153676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B6AD56-314D-4B4A-90F3-4F1841153676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B6AD56-314D-4B4A-90F3-4F1841153676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
