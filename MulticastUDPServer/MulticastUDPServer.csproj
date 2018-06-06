@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AF496B70-55F5-4E2F-A402-000812DBEE18}</ProjectGuid>
+    <ProjectGuid>{16800CA0-D811-48FE-8F38-590B19265B84}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Zadanie5</RootNamespace>
-    <AssemblyName>Zadanie5</AssemblyName>
+    <RootNamespace>MulticastUDPServer</RootNamespace>
+    <AssemblyName>MulticastUDPServer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
